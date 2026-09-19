@@ -1,0 +1,9 @@
+# PixZel MTL Export
+# Voxels: 32768
+
+newmtl mat_atlas
+Kd 1.0000 1.0000 1.0000
+Ks 0.0000 0.0000 0.0000
+d 1.0000
+illum 1
+map_Kd grass_block_atlas.png

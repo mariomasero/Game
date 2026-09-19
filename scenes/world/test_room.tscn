@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/world/test_room.gd" id="script"]
+[ext_resource type="PackedScene" path="res://scenes/player/player_3d.tscn" id="player"]
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.09, 0.12, 0.16, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.7, 0.85, 1)
+ambient_light_energy = 0.45
+reflected_light_source = 1
+tonemap_mode = 0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes"]
+
+[node name="TestRoom" type="Node3D"]
+script = ExtResource("script")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.81915206, 0.40957603, -0.40183246, 0, 0.7003808, 0.7137725, 0.57357645, -0.58474886, 0.5737508, 0, 0, 0)
+light_color = Color(1, 0.96, 0.89, 1)
+light_energy = 1.0
+shadow_enabled = true
+shadow_bias = 0.02
+shadow_normal_bias = 0.6
+directional_shadow_mode = 0
+directional_shadow_max_distance = 40.0
+
+[node name="Player" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+camera = NodePath("../Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+attributes = SubResource("CameraAttributes")
+projection = 1
+current = true
+size = 11.25
+near = 0.1
+far = 80.0

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://20e6u5ux3pvn"
+path="res://.godot/imported/grass_block.obj-598f8a255c05557e417777bea2c92a2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/grass_block.obj-598f8a255c05557e417777bea2c92a2d.mesh"]
+
+source_file="res://assets/game/tilesets/grass_block.obj"
+dest_files=["res://.godot/imported/grass_block.obj-598f8a255c05557e417777bea2c92a2d.mesh", "res://.godot/imported/grass_block.obj-598f8a255c05557e417777bea2c92a2d.mesh"]
+
+[params]
+
+generate_tangents=false
+generate_lods=false
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(0.03125, 0.03125, 0.03125)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
