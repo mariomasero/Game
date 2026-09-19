@@ -1,0 +1,8 @@
+.godot/
+builds/
+.local/
+.env
+.env.*
+*.log
+*.tmp
+*.bak

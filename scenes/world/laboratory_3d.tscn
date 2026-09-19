@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://do7t5tyj5botv"]
+
+[ext_resource type="Script" uid="uid://b48xcq5hmdork" path="res://scenes/world/laboratory_3d.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/world/room_shell.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/player/player_3d.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/lab/terminal_3d.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/lab/machine.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/lab_hud_3d.tscn" id="6"]
+[ext_resource type="Script" path="res://scripts/domain/lab_session.gd" id="session"]
+[ext_resource type="Script" path="res://scripts/persistence/lab_persistence.gd" id="persistence"]
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+ambient_light_source = 3
+ambient_light_color = Color(0.95, 0.98, 1, 1)
+ambient_light_energy = 0.45
+reflected_light_source = 2
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes"]
+
+[node name="Laboratory3D" type="Node3D" unique_id=1571984684]
+script = ExtResource("1")
+
+[node name="Session" type="Node" parent="."]
+script = ExtResource("session")
+
+[node name="Persistence" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("persistence")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1730254170]
+environment = SubResource("Environment")
+
+[node name="Room" parent="." unique_id=1976984149 instance=ExtResource("2")]
+
+[node name="Terminal" parent="." unique_id=319550373 instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0, -0.8)
+
+[node name="Machine" parent="." unique_id=840231184 instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, -3.6)
+
+[node name="Player" parent="." unique_id=430961502 node_paths=PackedStringArray("camera") instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+camera = NodePath("../Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=981998042]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 13.34, 8.8904)
+attributes = SubResource("CameraAttributes")
+projection = 1
+current = true
+size = 13.5
+near = 0.1
+far = 60.0
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=1845643962]
+transform = Transform3D(0.90630776, 0.38302225, -0.17860618, 0, 0.42261824, 0.9063078, 0.42261827, -0.8213938, 0.3830222, 0, 0, 0)
+light_color = Color(1, 0.985, 0.96, 1)
+light_energy = 0.16
+shadow_enabled = true
+directional_shadow_max_distance = 30.0
+
+[node name="HUD" parent="." unique_id=286006466 instance=ExtResource("6")]

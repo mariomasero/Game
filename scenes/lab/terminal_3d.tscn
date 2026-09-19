@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scenes/lab/terminal_3d.gd" id="script"]
+[ext_resource type="PackedScene" path="res://scenes/ui/interact_hint.tscn" id="hint"]
+[ext_resource type="Mesh" uid="uid://p6ka7v1utqm7" path="res://assets/game/models/pc_desktop.obj" id="model"]
+[ext_resource type="Material" path="res://assets/game/materials/pc_desktop_pixel.tres" id="material"]
+
+[sub_resource type="BoxShape3D" id="Reach"]
+size = Vector3(2.4, 2, 2.2)
+
+
+
+[sub_resource type="BoxShape3D" id="FootprintShape"]
+size = Vector3(1.25625, 1.25625, 0.91875)
+
+
+
+[node name="Terminal" type="Area3D"]
+script = ExtResource("script")
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="Reach" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.7, 0.45)
+shape = SubResource("Reach")
+
+[node name="InteractionPoint" type="Marker3D" parent="."]
+position = Vector3(0, 0.7, 0.5)
+
+[node name="InteractHint" parent="." instance=ExtResource("hint")]
+position = Vector3(0.2, 1.65, -0.2)
+text = "E · Consultar"
+
+[node name="Footprint" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.628125, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="Footprint"]
+shape = SubResource("FootprintShape")
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.009375, 0.61875, -0.009375)
+mesh = ExtResource("model")
+material_override = ExtResource("material")

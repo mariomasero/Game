@@ -1,0 +1,35 @@
+BIOTECH - PROTOTIPO DE LABORATORIO
+
+Abre Biotech.exe. Mantén Biotech.pck a su lado.
+No hace falta instalar Godot. Versión local para Windows x86_64.
+
+CONTROLES
+WASD o flechas: caminar.
+E: usar el ordenador o la máquina cuando estés cerca.
+Ratón: elegir acciones en los paneles.
+Escape: cerrar panel / pausar. La pausa también permite silenciar sonidos.
+
+PRIMER OBJETIVO
+Compra una matriz y un catalizador en el ordenador.
+Prepara Lumen en la máquina, espera 12 segundos y recógelo.
+Entrega el pedido en el ordenador para cobrar 35 créditos.
+Tras tres pedidos puedes invertir 100 créditos en calibrar la máquina.
+Los siguientes lotes tardan 8 segundos.
+Si compras demasiados insumos del mismo tipo, puedes devolver los que no has usado.
+
+PARTIDA
+Se guarda automáticamente. Usa Escape > Guardar y salir al terminar.
+El tiempo de producción no avanza mientras el juego está cerrado o en pausa.
+Esta versión comparte la partida con F5 del proyecto, en:
+%APPDATA%\Godot\app_userdata\Biotech — Laboratorio\
+No necesitas mover la partida junto al ejecutable. Nueva partida pide confirmación.
+Si hay un problema de lectura/escritura, el juego ofrece recuperación o reintento.
+
+Es una muestra pequeña: una sala, un producto, pedidos repetibles y una mejora.
+La puerta aún es decorativa. Arte y contenido seguirán evolucionando.
+
+CRÉDITOS
+Original character template created by Eris Esra:
+https://erisesra.itch.io/character-templates-pack
+Godot Engine 4.6.2: https://godotengine.org
+Licencias y avisos completos en la carpeta licenses.
