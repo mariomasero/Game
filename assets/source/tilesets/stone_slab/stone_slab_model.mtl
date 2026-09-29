@@ -1,0 +1,10 @@
+# PixZel MTL Export
+# Voxels: 8192
+
+newmtl mat_atlas
+Ka 0.0000 0.0000 0.0000
+Kd 1.0000 1.0000 1.0000
+Ks 0.0000 0.0000 0.0000
+d 1.0000
+illum 1
+map_Kd stone_slab_model_atlas.png

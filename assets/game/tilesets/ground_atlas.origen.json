@@ -1,0 +1,16 @@
+{
+	"acento": true,
+	"atlas_size": [
+		1024,
+		896
+	],
+	"fleco_texeles": 1.5,
+	"fuentes": {
+		"res://assets/source/tilesets/cobblestone/cobblestone_top.png": "76bc5dbe4f5fe1a424adb2d656bab1cabf8df8656e6862c8ca80eb6e615fca34",
+		"res://assets/source/tilesets/ground/fill_dirt_128.png": "5f649fab1d6025122077a9f2a7f4ce9b914be3278501e598f445c076e59cd0d0",
+		"res://assets/source/tilesets/ground/fill_grass_128.png": "a01d8f6ba646b1b543ee40e2baf50e516dfa817880627617d1c59bc08fbc25d8"
+	},
+	"grano": 4,
+	"modo": "normal",
+	"semilla": 1
+}

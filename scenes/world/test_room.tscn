@@ -8,7 +8,7 @@ background_mode = 1
 background_color = Color(0.09, 0.12, 0.16, 1)
 ambient_light_source = 2
 ambient_light_color = Color(0.62, 0.7, 0.85, 1)
-ambient_light_energy = 0.45
+ambient_light_energy = 0.54
 reflected_light_source = 1
 tonemap_mode = 0
 
@@ -21,12 +21,12 @@ script = ExtResource("script")
 environment = SubResource("Environment")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.81915206, 0.40957603, -0.40183246, 0, 0.7003808, 0.7137725, 0.57357645, -0.58474886, 0.5737508, 0, 0, 0)
+transform = Transform3D(0.81915206, 0.4094441, -0.40167835, 0, 0.7003048, 0.71384394, 0.57357645, -0.5847467, 0.5736561, 0, 0, 0)
 light_color = Color(1, 0.96, 0.89, 1)
-light_energy = 1.0
+light_energy = 2.0
 shadow_enabled = true
-shadow_bias = 0.02
-shadow_normal_bias = 0.6
+shadow_bias = 0.05
+shadow_normal_bias = 2.0
 directional_shadow_mode = 0
 directional_shadow_max_distance = 40.0
 

@@ -1,0 +1,3 @@
+newmtl fence_atlas
+Kd 1.0 1.0 1.0
+map_Kd fence_atlas.png

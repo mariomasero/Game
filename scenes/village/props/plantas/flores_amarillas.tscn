@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_oy86g"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/flores_amarillas.tres" id="2_v58in"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5orts"]
+size = Vector2(2.1875, 2)
+
+[node name="FloresAmarillas" type="Node3D" unique_id=732937767]
+script = ExtResource("1_oy86g")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1731612584]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=548911040]
+mesh = SubResource("QuadMesh_5orts")
+surface_material_override/0 = ExtResource("2_v58in")

@@ -3,9 +3,9 @@ extends RefCounted
 
 ## Alterna entre ventana y pantalla completa sin tocar la imagen interna.
 ##
-## El viewport se mantiene en 640x360, que es 16:9 igual que 1920x1080 y
+## El viewport se mantiene en 960x540, que es 16:9 igual que 1920x1080 y
 ## 3840x2160. Con el escalado entero del proyecto el motor amplia esa imagen
-## x3 en Full HD y x6 en 4K, sin deformarla ni dejar barras.
+## x2 en Full HD y x4 en 4K, sin deformarla ni dejar barras.
 
 const FULLSCREEN_MODES: Array[DisplayServer.WindowMode] = [
 	DisplayServer.WINDOW_MODE_FULLSCREEN,

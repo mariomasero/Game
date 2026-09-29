@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_vh2hr"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/arbusto_pequeno_purpura.tres" id="2_7o4ie"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_f3ma8"]
+size = Vector2(2.125, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8kg5w"]
+size = Vector3(1.375, 2.4517221, 0.61038727)
+
+[node name="ArbustoPequenoPurpura" type="Node3D" unique_id=684257134]
+script = ExtResource("1_vh2hr")
+colision_automatica = false
+huella_fija = Vector2i(2, 1)
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1545789719]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=757320643]
+mesh = SubResource("QuadMesh_f3ma8")
+surface_material_override/0 = ExtResource("2_7o4ie")
+
+[node name="Colision" type="StaticBody3D" parent="." unique_id=579412243]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision" unique_id=1209366520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2258611, 0)
+shape = SubResource("BoxShape3D_8kg5w")

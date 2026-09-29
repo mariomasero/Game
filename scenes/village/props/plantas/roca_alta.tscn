@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_h5xll"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/roca_alta.tres" id="2_vcjj8"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_mgdj0"]
+size = Vector2(2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dj4x3"]
+size = Vector3(1, 2.0158603, 0.61038727)
+
+[node name="RocaAlta" type="Node3D" unique_id=1261978783]
+script = ExtResource("1_h5xll")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+
+[node name="Modelo" type="Node3D" parent="." unique_id=264691114]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1662673803]
+mesh = SubResource("QuadMesh_mgdj0")
+surface_material_override/0 = ExtResource("2_vcjj8")
+
+[node name="Colision" type="StaticBody3D" parent="." unique_id=521675223]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision" unique_id=1019981438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0079302, 0)
+shape = SubResource("BoxShape3D_dj4x3")

@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_6jofb"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/hierba_alta_b.tres" id="2_lfwb4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_qpu7i"]
+size = Vector2(2.1875, 2)
+
+[node name="HierbaAltaB" type="Node3D" unique_id=288727036]
+script = ExtResource("1_6jofb")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1485815429]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=413970688]
+mesh = SubResource("QuadMesh_qpu7i")
+surface_material_override/0 = ExtResource("2_lfwb4")

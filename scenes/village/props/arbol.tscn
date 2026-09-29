@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_tree.gd" id="prop"]
+[ext_resource type="Material" path="res://assets/game/materials/tree_pixel.tres" id="pixel"]
+
+[sub_resource type="QuadMesh" id="Lienzo"]
+size = Vector2(4.625, 5.6875)
+
+[sub_resource type="BoxShape3D" id="Tronco"]
+size = Vector3(0.75, 1.7434468, 0.6103873)
+
+[node name="Arbol" type="Node3D"]
+script = ExtResource("prop")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+
+[node name="Modelo" type="Node3D" parent="."]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo"]
+mesh = SubResource("Lienzo")
+surface_material_override/0 = ExtResource("pixel")
+
+[node name="Colision" type="StaticBody3D" parent="."]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8717234, 0)
+shape = SubResource("Tronco")

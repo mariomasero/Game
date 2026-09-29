@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_kspek"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/piedras_con_hierba.tres" id="2_1skn8"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_vm327"]
+size = Vector2(2, 1)
+
+[node name="PiedrasConHierba" type="Node3D" unique_id=14531026]
+script = ExtResource("1_kspek")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=666357813]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1100549225]
+mesh = SubResource("QuadMesh_vm327")
+surface_material_override/0 = ExtResource("2_1skn8")

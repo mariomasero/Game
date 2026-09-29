@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ej73a32pap0s"]
+
+[ext_resource type="Texture2D" uid="uid://dm6tyons3bnpk" path="res://assets/game/models/metal_fence/fence_atlas.png" id="1"]
+
+[resource]
+resource_name = "MetalFencePixel"
+diffuse_mode = 1
+specular_mode = 2
+albedo_texture = ExtResource("1")
+metallic_specular = 0.0
+texture_filter = 0

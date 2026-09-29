@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_lso11"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/hierba_alta_espigas_secas.tres" id="2_w0kbs"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_0c66q"]
+size = Vector2(2.1875, 2)
+
+[node name="HierbaAltaEspigasSecas" type="Node3D" unique_id=906320319]
+script = ExtResource("1_lso11")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=804787890]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=961357212]
+mesh = SubResource("QuadMesh_0c66q")
+surface_material_override/0 = ExtResource("2_w0kbs")

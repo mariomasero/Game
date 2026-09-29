@@ -1,0 +1,45 @@
+GIMP Palette
+Name: casa_laboratorio
+Columns: 8
+#
+ 24  20  30	outline
+ 38  42  62	steel0
+ 56  64  92	steel1
+ 80  92 128	steel2
+112 124 160	steel3
+ 62  68  90	corr0
+ 92 100 124	corr1
+124 132 156	corr2
+160 168 188	corr3
+ 96  42  22	rust0
+150  70  30	rust1
+196 112  52	rust2
+150 112  78	plas0
+196 152 104	plas1
+222 184 132	plas2
+240 212 166	plas3
+ 62  58  68	conc0
+ 94  90 100	conc1
+126 122 130	conc2
+156 152 158	conc3
+ 44  44  54	pipe0
+ 70  70  84	pipe1
+102 102 116	pipe2
+140 140 152	pipe3
+ 28  78 110	glass0
+ 52 132 176	glass1
+104 190 222	glass2
+214 244 255	glass3
+ 92  64  34	warm0
+170 114  44	warm1
+234 170  56	warm2
+255 222 120	warm3
+255 246 200	warm4
+ 92  44  20	wood0
+146  80  38	wood1
+192 118  58	wood2
+ 40 120  56	green0
+110 200  90	green1
+176 150 104	trim0
+216 196 150	trim1
+240 228 190	trim2

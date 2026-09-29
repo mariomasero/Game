@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlaceableDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/domain/placeable_definition.gd" id="1_def"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/bloque_cesped.tscn" id="2_escena"]
+
+[resource]
+script = ExtResource("1_def")
+id = &"bloque_cesped"
+nombre = "Bloque de césped"
+huella = Vector2i(1, 1)
+escena = ExtResource("2_escena")

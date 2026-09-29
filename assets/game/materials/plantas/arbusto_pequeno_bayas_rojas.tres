@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/game/shaders/plant_sway.gdshader" id="1_s6beb"]
+[ext_resource type="Texture2D" path="res://assets/game/textures/plantas/arbusto_pequeno_bayas_rojas.png" id="2_62pls"]
+
+[resource]
+resource_name = "arbusto_pequeno_bayas_rojas"
+render_priority = 0
+shader = ExtResource("1_s6beb")
+shader_parameter/plant_texture = ExtResource("2_62pls")
+shader_parameter/rect_min = Vector2(-2, 0)
+shader_parameter/rect_size = Vector2(68, 64)
+shader_parameter/top_row = 15.0
+shader_parameter/pixel_step = Vector3(0.03125, 0.054482713, 0.038149204)
+shader_parameter/wind_direction = Vector2(1, 0.3)
+shader_parameter/wind_speed = 1.2
+shader_parameter/wind_scale = 0.35
+shader_parameter/wind_strength = 1.0
+shader_parameter/bend_texels = 1.0
+shader_parameter/sway_texels = 0.6
+shader_parameter/sway_frequency = 0.4
+shader_parameter/time_step = 0.1

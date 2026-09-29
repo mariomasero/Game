@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_ujss5"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/arbusto_grande_otonal.tres" id="2_fyiy3"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_qnp65"]
+size = Vector2(4.125, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oieo0"]
+size = Vector3(2.625, 3.8137898, 0.61038727)
+
+[node name="ArbustoGrandeOtonal" type="Node3D" unique_id=1522575185]
+script = ExtResource("1_ujss5")
+colision_automatica = false
+huella_fija = Vector2i(3, 1)
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1197148190]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1385931145]
+mesh = SubResource("QuadMesh_qnp65")
+surface_material_override/0 = ExtResource("2_fyiy3")
+
+[node name="Colision" type="StaticBody3D" parent="." unique_id=144477690]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision" unique_id=1428110299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9068949, 0)
+shape = SubResource("BoxShape3D_oieo0")

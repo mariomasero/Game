@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_6lkog"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/helecho_claro.tres" id="2_m4l8b"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_fb24g"]
+size = Vector2(3.1875, 2)
+
+[node name="HelechoClaro" type="Node3D" unique_id=452495194]
+script = ExtResource("1_6lkog")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1673527738]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=134767082]
+mesh = SubResource("QuadMesh_fb24g")
+surface_material_override/0 = ExtResource("2_m4l8b")

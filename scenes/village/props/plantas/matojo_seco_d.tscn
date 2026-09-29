@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_nqf24"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/matojo_seco_d.tres" id="2_14k4j"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xx6ol"]
+size = Vector2(2.1875, 2)
+
+[node name="MatojoSecoD" type="Node3D" unique_id=1296892075]
+script = ExtResource("1_nqf24")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1703811024]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=2028505740]
+mesh = SubResource("QuadMesh_xx6ol")
+surface_material_override/0 = ExtResource("2_14k4j")

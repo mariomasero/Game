@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_8m2fr"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/flores_azules.tres" id="2_2xh0o"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_a8ssk"]
+size = Vector2(2.1875, 2)
+
+[node name="FloresAzules" type="Node3D" unique_id=1197893953]
+script = ExtResource("1_8m2fr")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=908704159]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1567704006]
+mesh = SubResource("QuadMesh_a8ssk")
+surface_material_override/0 = ExtResource("2_2xh0o")

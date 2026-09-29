@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_1vx5v"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/guijarros.tres" id="2_4jjue"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_mu42d"]
+size = Vector2(2, 1)
+
+[node name="Guijarros" type="Node3D" unique_id=1282220547]
+script = ExtResource("1_1vx5v")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=420706379]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=740081735]
+mesh = SubResource("QuadMesh_mu42d")
+surface_material_override/0 = ExtResource("2_4jjue")

@@ -1,0 +1,38 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://df0rxtf0ielj1"]
+
+[ext_resource type="Shader" uid="uid://c6mkt3kmg5t7t" path="res://assets/game/shaders/tree_sway.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://dh6n3nv6aen7q" path="res://assets/game/textures/tree_canopy.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://csuig83n7u5yi" path="res://assets/game/textures/tree_trunk.png" id="3"]
+
+[resource]
+resource_name = "TreePixel"
+render_priority = 0
+shader = ExtResource("1")
+shader_parameter/canopy_texture = ExtResource("2")
+shader_parameter/trunk_texture = ExtResource("3")
+shader_parameter/canopy_raw = ExtResource("2")
+shader_parameter/rect_min = Vector2(-2, 0)
+shader_parameter/rect_size = Vector2(148, 182)
+shader_parameter/top_row = 4.0
+shader_parameter/crown_center = Vector2(69, 75)
+shader_parameter/crown_radius = Vector2(66, 71)
+shader_parameter/pixel_step = Vector3(0.03125, 0.0544827, 0.0381492)
+shader_parameter/wind_direction = Vector2(1, 0.3)
+shader_parameter/wind_speed = 1.2
+shader_parameter/wind_scale = 0.35
+shader_parameter/wind_strength = 1.0
+shader_parameter/bend_texels = 2.0
+shader_parameter/sway_texels = 1.2
+shader_parameter/sway_frequency = 0.3
+shader_parameter/rustle_texels = 1.4
+shader_parameter/rustle_size = Vector2(11, 11)
+shader_parameter/rustle_speed = 0.9
+shader_parameter/rustle_axes = Vector2(1, 0.6)
+shader_parameter/rustle_wave_length = 70.0
+shader_parameter/rustle_wave_speed = 55.0
+shader_parameter/shimmer = 0.35
+shader_parameter/time_step = 0.1
+shader_parameter/lit_texel_0 = Vector2(66, 7)
+shader_parameter/lit_texel_1 = Vector2(63, 5)
+shader_parameter/lit_texel_2 = Vector2(60, 5)
+shader_parameter/lit_texel_3 = Vector2(53, 11)

@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_74ttc"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/setas_marrones_a.tres" id="2_y0urx"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_u0qpn"]
+size = Vector2(2, 2)
+
+[node name="SetasMarronesA" type="Node3D" unique_id=348494686]
+script = ExtResource("1_74ttc")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=576312926]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1477086332]
+mesh = SubResource("QuadMesh_u0qpn")
+surface_material_override/0 = ExtResource("2_y0urx")

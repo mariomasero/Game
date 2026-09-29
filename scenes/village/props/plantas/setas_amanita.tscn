@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_8a1fw"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/setas_amanita.tres" id="2_d2p7w"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_awvhq"]
+size = Vector2(2, 2)
+
+[node name="SetasAmanita" type="Node3D" unique_id=1226729988]
+script = ExtResource("1_8a1fw")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1155466350]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=606506839]
+mesh = SubResource("QuadMesh_awvhq")
+surface_material_override/0 = ExtResource("2_d2p7w")

@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_nm8np"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/hierba_baja_capullos.tres" id="2_d6o2k"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_jeueg"]
+size = Vector2(2.1875, 1)
+
+[node name="HierbaBajaCapullos" type="Node3D" unique_id=536235081]
+script = ExtResource("1_nm8np")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=2074197395]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1253210695]
+mesh = SubResource("QuadMesh_jeueg")
+surface_material_override/0 = ExtResource("2_d6o2k")

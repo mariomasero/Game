@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/game/shaders/plant_sway.gdshader" id="1_tbwrx"]
+[ext_resource type="Texture2D" path="res://assets/game/textures/plantas/piedras_con_hierba.png" id="2_0nrhp"]
+
+[resource]
+resource_name = "piedras_con_hierba"
+render_priority = 0
+shader = ExtResource("1_tbwrx")
+shader_parameter/plant_texture = ExtResource("2_0nrhp")
+shader_parameter/rect_min = Vector2(0, 0)
+shader_parameter/rect_size = Vector2(64, 32)
+shader_parameter/top_row = 4.0
+shader_parameter/pixel_step = Vector3(0.03125, 0.054482713, 0.038149204)
+shader_parameter/wind_direction = Vector2(1, 0.3)
+shader_parameter/wind_speed = 1.2
+shader_parameter/wind_scale = 0.35
+shader_parameter/wind_strength = 1.0
+shader_parameter/bend_texels = 0.0
+shader_parameter/sway_texels = 0.0
+shader_parameter/sway_frequency = 0.0
+shader_parameter/time_step = 0.1

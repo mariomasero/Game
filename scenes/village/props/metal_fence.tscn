@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_fence.gd" id="valla"]
+[ext_resource type="Mesh" path="res://assets/game/models/metal_fence/fence_post.obj" id="poste"]
+[ext_resource type="Material" path="res://assets/game/materials/metal_fence_pixel.tres" id="pixel"]
+
+[sub_resource type="BoxShape3D" id="Caja"]
+
+[node name="MetalFence" type="Node3D"]
+script = ExtResource("valla")
+
+[node name="Modelo" type="Node3D" parent="."]
+
+[node name="Poste" type="MeshInstance3D" parent="Modelo"]
+mesh = ExtResource("poste")
+surface_material_override/0 = ExtResource("pixel")
+
+[node name="Colision" type="StaticBody3D" parent="."]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision"]
+shape = SubResource("Caja")

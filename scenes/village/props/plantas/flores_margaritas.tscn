@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_0qjr2"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/flores_margaritas.tres" id="2_exyqv"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_fme3c"]
+size = Vector2(2.1875, 2)
+
+[node name="FloresMargaritas" type="Node3D" unique_id=768769784]
+script = ExtResource("1_0qjr2")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1469443836]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1123934538]
+mesh = SubResource("QuadMesh_fme3c")
+surface_material_override/0 = ExtResource("2_exyqv")

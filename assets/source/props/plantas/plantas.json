@@ -1,0 +1,1274 @@
+[
+ {
+  "nombre": "arbusto_pequeno_verde",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   49,
+   36
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   75,
+   13,
+   49,
+   36
+  ],
+  "bloques_ancho": 1.53,
+  "bloques_alto": 1.12
+ },
+ {
+  "nombre": "arbusto_pequeno_bayas_rojas",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   62,
+   49
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   133,
+   4,
+   62,
+   49
+  ],
+  "bloques_ancho": 1.94,
+  "bloques_alto": 1.53
+ },
+ {
+  "nombre": "arbusto_pequeno_otonal",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   56,
+   46
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   204,
+   7,
+   56,
+   46
+  ],
+  "bloques_ancho": 1.75,
+  "bloques_alto": 1.44
+ },
+ {
+  "nombre": "arbusto_pequeno_rojizo",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   53,
+   47
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   271,
+   7,
+   53,
+   47
+  ],
+  "bloques_ancho": 1.66,
+  "bloques_alto": 1.47
+ },
+ {
+  "nombre": "arbusto_pequeno_flores_blancas",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   59,
+   46
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   335,
+   10,
+   59,
+   46
+  ],
+  "bloques_ancho": 1.84,
+  "bloques_alto": 1.44
+ },
+ {
+  "nombre": "arbusto_pequeno_purpura",
+  "categoria": "arbustos",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   55,
+   45
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   404,
+   9,
+   55,
+   45
+  ],
+  "bloques_ancho": 1.72,
+  "bloques_alto": 1.41
+ },
+ {
+  "nombre": "arbusto_grande_verde",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   96
+  ],
+  "objeto": [
+   101,
+   71
+  ],
+  "pie_px": [
+   64,
+   96
+  ],
+  "origen_en_hoja": [
+   47,
+   53,
+   101,
+   71
+  ],
+  "bloques_ancho": 3.16,
+  "bloques_alto": 2.22
+ },
+ {
+  "nombre": "arbusto_grande_otonal",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   96
+  ],
+  "objeto": [
+   105,
+   70
+  ],
+  "pie_px": [
+   64,
+   96
+  ],
+  "origen_en_hoja": [
+   155,
+   54,
+   105,
+   70
+  ],
+  "bloques_ancho": 3.28,
+  "bloques_alto": 2.19
+ },
+ {
+  "nombre": "arbusto_grande_flores_crema",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   96
+  ],
+  "objeto": [
+   109,
+   72
+  ],
+  "pie_px": [
+   64,
+   96
+  ],
+  "origen_en_hoja": [
+   266,
+   53,
+   109,
+   72
+  ],
+  "bloques_ancho": 3.41,
+  "bloques_alto": 2.25
+ },
+ {
+  "nombre": "arbusto_grande_bayas_rojas",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   96
+  ],
+  "objeto": [
+   103,
+   65
+  ],
+  "pie_px": [
+   64,
+   96
+  ],
+  "origen_en_hoja": [
+   383,
+   58,
+   103,
+   65
+  ],
+  "bloques_ancho": 3.22,
+  "bloques_alto": 2.03
+ },
+ {
+  "nombre": "arbusto_flores_rosas",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   96
+  ],
+  "objeto": [
+   105,
+   65
+  ],
+  "pie_px": [
+   64,
+   96
+  ],
+  "origen_en_hoja": [
+   46,
+   125,
+   105,
+   65
+  ],
+  "bloques_ancho": 3.28,
+  "bloques_alto": 2.03
+ },
+ {
+  "nombre": "arbusto_flores_azules",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   64
+  ],
+  "objeto": [
+   101,
+   64
+  ],
+  "pie_px": [
+   64,
+   64
+  ],
+  "origen_en_hoja": [
+   160,
+   126,
+   101,
+   64
+  ],
+  "bloques_ancho": 3.16,
+  "bloques_alto": 2.0
+ },
+ {
+  "nombre": "arbusto_flores_blancas",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   64
+  ],
+  "objeto": [
+   99,
+   63
+  ],
+  "pie_px": [
+   64,
+   64
+  ],
+  "origen_en_hoja": [
+   275,
+   125,
+   99,
+   63
+  ],
+  "bloques_ancho": 3.09,
+  "bloques_alto": 1.97
+ },
+ {
+  "nombre": "arbusto_flores_amarillas",
+  "categoria": "arbustos",
+  "lienzo": [
+   128,
+   64
+  ],
+  "objeto": [
+   99,
+   60
+  ],
+  "pie_px": [
+   64,
+   64
+  ],
+  "origen_en_hoja": [
+   387,
+   128,
+   99,
+   60
+  ],
+  "bloques_ancho": 3.09,
+  "bloques_alto": 1.88
+ },
+ {
+  "nombre": "hierba_baja_a",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   42,
+   36
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   27,
+   200,
+   42,
+   36
+  ],
+  "bloques_ancho": 1.31,
+  "bloques_alto": 1.12
+ },
+ {
+  "nombre": "hierba_baja_b",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   40,
+   29
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   76,
+   208,
+   40,
+   29
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 0.91
+ },
+ {
+  "nombre": "hierba_baja_c",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   38,
+   32
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   124,
+   206,
+   38,
+   32
+  ],
+  "bloques_ancho": 1.19,
+  "bloques_alto": 1.0
+ },
+ {
+  "nombre": "hierba_baja_seca",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   39,
+   34
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   170,
+   203,
+   39,
+   34
+  ],
+  "bloques_ancho": 1.22,
+  "bloques_alto": 1.06
+ },
+ {
+  "nombre": "hierba_baja_capullos",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   36,
+   31
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   217,
+   206,
+   36,
+   31
+  ],
+  "bloques_ancho": 1.12,
+  "bloques_alto": 0.97
+ },
+ {
+  "nombre": "hierba_alta_a",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   42,
+   49
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   271,
+   192,
+   42,
+   49
+  ],
+  "bloques_ancho": 1.31,
+  "bloques_alto": 1.53
+ },
+ {
+  "nombre": "hierba_alta_b",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   40,
+   46
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   321,
+   196,
+   40,
+   46
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 1.44
+ },
+ {
+  "nombre": "hierba_alta_espigas",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   46,
+   53
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   368,
+   192,
+   46,
+   53
+  ],
+  "bloques_ancho": 1.44,
+  "bloques_alto": 1.66
+ },
+ {
+  "nombre": "hierba_alta_c",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   44,
+   48
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   422,
+   196,
+   44,
+   48
+  ],
+  "bloques_ancho": 1.38,
+  "bloques_alto": 1.5
+ },
+ {
+  "nombre": "hierba_alta_espigas_secas",
+  "categoria": "hierbas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   40,
+   49
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   474,
+   193,
+   40,
+   49
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 1.53
+ },
+ {
+  "nombre": "matojo_seco_a",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   41,
+   46
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   19,
+   245,
+   41,
+   46
+  ],
+  "bloques_ancho": 1.28,
+  "bloques_alto": 1.44
+ },
+ {
+  "nombre": "matojo_seco_b",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   40,
+   46
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   72,
+   246,
+   40,
+   46
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 1.44
+ },
+ {
+  "nombre": "matojo_seco_c",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   39,
+   40
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   123,
+   250,
+   39,
+   40
+  ],
+  "bloques_ancho": 1.22,
+  "bloques_alto": 1.25
+ },
+ {
+  "nombre": "matojo_seco_d",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   38,
+   40
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   171,
+   248,
+   38,
+   40
+  ],
+  "bloques_ancho": 1.19,
+  "bloques_alto": 1.25
+ },
+ {
+  "nombre": "flores_margaritas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   40,
+   37
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   222,
+   252,
+   40,
+   37
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 1.16
+ },
+ {
+  "nombre": "flores_rosas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   40,
+   34
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   274,
+   254,
+   40,
+   34
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 1.06
+ },
+ {
+  "nombre": "flores_azules",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   37,
+   33
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   324,
+   255,
+   37,
+   33
+  ],
+  "bloques_ancho": 1.16,
+  "bloques_alto": 1.03
+ },
+ {
+  "nombre": "flores_amarillas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   42,
+   34
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   372,
+   254,
+   42,
+   34
+  ],
+  "bloques_ancho": 1.31,
+  "bloques_alto": 1.06
+ },
+ {
+  "nombre": "flores_crema",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   39,
+   33
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   425,
+   253,
+   39,
+   33
+  ],
+  "bloques_ancho": 1.22,
+  "bloques_alto": 1.03
+ },
+ {
+  "nombre": "flores_violetas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   44,
+   35
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   476,
+   252,
+   44,
+   35
+  ],
+  "bloques_ancho": 1.38,
+  "bloques_alto": 1.09
+ },
+ {
+  "nombre": "trebol_flores_blancas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   50,
+   38
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   18,
+   303,
+   50,
+   38
+  ],
+  "bloques_ancho": 1.56,
+  "bloques_alto": 1.19
+ },
+ {
+  "nombre": "trebol_flor_rosa",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   54,
+   42
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   77,
+   302,
+   54,
+   42
+  ],
+  "bloques_ancho": 1.69,
+  "bloques_alto": 1.31
+ },
+ {
+  "nombre": "dientes_de_leon",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   59,
+   44
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   141,
+   301,
+   59,
+   44
+  ],
+  "bloques_ancho": 1.84,
+  "bloques_alto": 1.38
+ },
+ {
+  "nombre": "dientes_de_leon_vilanos",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   49,
+   41
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   205,
+   304,
+   49,
+   41
+  ],
+  "bloques_ancho": 1.53,
+  "bloques_alto": 1.28
+ },
+ {
+  "nombre": "helecho_claro",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   96,
+   64
+  ],
+  "objeto": [
+   71,
+   53
+  ],
+  "pie_px": [
+   48,
+   64
+  ],
+  "origen_en_hoja": [
+   264,
+   294,
+   71,
+   53
+  ],
+  "bloques_ancho": 2.22,
+  "bloques_alto": 1.66
+ },
+ {
+  "nombre": "helecho_oscuro",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   96,
+   64
+  ],
+  "objeto": [
+   68,
+   53
+  ],
+  "pie_px": [
+   48,
+   64
+  ],
+  "origen_en_hoja": [
+   344,
+   294,
+   68,
+   53
+  ],
+  "bloques_ancho": 2.12,
+  "bloques_alto": 1.66
+ },
+ {
+  "nombre": "espadanas",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   48,
+   56
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   423,
+   290,
+   48,
+   56
+  ],
+  "bloques_ancho": 1.5,
+  "bloques_alto": 1.75
+ },
+ {
+  "nombre": "plumero_pampa",
+  "categoria": "hierbas_y_flores",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   45,
+   53
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   477,
+   291,
+   45,
+   53
+  ],
+  "bloques_ancho": 1.41,
+  "bloques_alto": 1.66
+ },
+ {
+  "nombre": "setas_amanita",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   41,
+   38
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   11,
+   350,
+   41,
+   38
+  ],
+  "bloques_ancho": 1.28,
+  "bloques_alto": 1.19
+ },
+ {
+  "nombre": "setas_marrones_a",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   33,
+   35
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   62,
+   352,
+   33,
+   35
+  ],
+  "bloques_ancho": 1.03,
+  "bloques_alto": 1.09
+ },
+ {
+  "nombre": "setas_marrones_b",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   32,
+   32
+  ],
+  "objeto": [
+   32,
+   31
+  ],
+  "pie_px": [
+   16,
+   32
+  ],
+  "origen_en_hoja": [
+   106,
+   355,
+   32,
+   31
+  ],
+  "bloques_ancho": 1.0,
+  "bloques_alto": 0.97
+ },
+ {
+  "nombre": "guijarros",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   35,
+   24
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   150,
+   364,
+   35,
+   24
+  ],
+  "bloques_ancho": 1.09,
+  "bloques_alto": 0.75
+ },
+ {
+  "nombre": "piedras_con_hierba",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   51,
+   28
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   193,
+   359,
+   51,
+   28
+  ],
+  "bloques_ancho": 1.59,
+  "bloques_alto": 0.88
+ },
+ {
+  "nombre": "piedras_con_musgo",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   47,
+   28
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   250,
+   361,
+   47,
+   28
+  ],
+  "bloques_ancho": 1.47,
+  "bloques_alto": 0.88
+ },
+ {
+  "nombre": "piedras_en_tierra",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   45,
+   27
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   302,
+   360,
+   45,
+   27
+  ],
+  "bloques_ancho": 1.41,
+  "bloques_alto": 0.84
+ },
+ {
+  "nombre": "roca_musgo",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   37,
+   28
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   359,
+   358,
+   37,
+   28
+  ],
+  "bloques_ancho": 1.16,
+  "bloques_alto": 0.88
+ },
+ {
+  "nombre": "roca_plana",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   32
+  ],
+  "objeto": [
+   40,
+   26
+  ],
+  "pie_px": [
+   32,
+   32
+  ],
+  "origen_en_hoja": [
+   402,
+   362,
+   40,
+   26
+  ],
+  "bloques_ancho": 1.25,
+  "bloques_alto": 0.81
+ },
+ {
+  "nombre": "roca_grande_musgo",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   37,
+   36
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   448,
+   352,
+   37,
+   36
+  ],
+  "bloques_ancho": 1.16,
+  "bloques_alto": 1.12
+ },
+ {
+  "nombre": "roca_alta",
+  "categoria": "setas_y_rocas",
+  "lienzo": [
+   64,
+   64
+  ],
+  "objeto": [
+   41,
+   37
+  ],
+  "pie_px": [
+   32,
+   64
+  ],
+  "origen_en_hoja": [
+   489,
+   350,
+   41,
+   37
+  ],
+  "bloques_ancho": 1.28,
+  "bloques_alto": 1.16
+ }
+]

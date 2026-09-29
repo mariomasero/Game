@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_mwnxx"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/roca_musgo.tres" id="2_qalo7"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_edwl3"]
+size = Vector2(2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_abcd0"]
+size = Vector3(0.925, 1.525516, 0.61038727)
+
+[node name="RocaMusgo" type="Node3D" unique_id=1326021890]
+script = ExtResource("1_mwnxx")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+
+[node name="Modelo" type="Node3D" parent="." unique_id=677169629]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=110899544]
+mesh = SubResource("QuadMesh_edwl3")
+surface_material_override/0 = ExtResource("2_qalo7")
+
+[node name="Colision" type="StaticBody3D" parent="." unique_id=470344265]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision" unique_id=990790933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.762758, 0)
+shape = SubResource("BoxShape3D_abcd0")

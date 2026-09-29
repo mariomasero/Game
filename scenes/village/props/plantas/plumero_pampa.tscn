@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_mf07w"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/plumero_pampa.tres" id="2_luwfo"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_urwjv"]
+size = Vector2(2.1875, 2)
+
+[node name="PlumeroPampa" type="Node3D" unique_id=1422661650]
+script = ExtResource("1_mf07w")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1783567915]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=218469909]
+mesh = SubResource("QuadMesh_urwjv")
+surface_material_override/0 = ExtResource("2_luwfo")

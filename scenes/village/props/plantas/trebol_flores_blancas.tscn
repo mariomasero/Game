@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_6kovq"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/trebol_flores_blancas.tres" id="2_jo365"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_jqp2c"]
+size = Vector2(2.1875, 2)
+
+[node name="TrebolFloresBlancas" type="Node3D" unique_id=382352403]
+script = ExtResource("1_6kovq")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=575261139]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=143662870]
+mesh = SubResource("QuadMesh_jqp2c")
+surface_material_override/0 = ExtResource("2_jo365")

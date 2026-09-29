@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/game/shaders/plant_sway.gdshader" id="1_60ywt"]
+[ext_resource type="Texture2D" path="res://assets/game/textures/plantas/roca_grande_musgo.png" id="2_yw54b"]
+
+[resource]
+resource_name = "roca_grande_musgo"
+render_priority = 0
+shader = ExtResource("1_60ywt")
+shader_parameter/plant_texture = ExtResource("2_yw54b")
+shader_parameter/rect_min = Vector2(0, 0)
+shader_parameter/rect_size = Vector2(64, 64)
+shader_parameter/top_row = 28.0
+shader_parameter/pixel_step = Vector3(0.03125, 0.054482713, 0.038149204)
+shader_parameter/wind_direction = Vector2(1, 0.3)
+shader_parameter/wind_speed = 1.2
+shader_parameter/wind_scale = 0.35
+shader_parameter/wind_strength = 1.0
+shader_parameter/bend_texels = 0.0
+shader_parameter/sway_texels = 0.0
+shader_parameter/sway_frequency = 0.0
+shader_parameter/time_step = 0.1

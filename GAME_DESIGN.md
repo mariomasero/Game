@@ -1,6 +1,6 @@
 # Diseño principal — Del laboratorio de pueblo a la corporación biotecnológica
 
-Fecha: 17 de septiembre de 2026.  
+Fecha: 17 de septiembre de 2026.
 Estado: esqueleto principal acordado; detalles de contenido pendientes de desarrollo.
 
 ## 1. Visión del juego
@@ -48,13 +48,13 @@ Las tres actividades se alimentan entre sí. El jugador debe poder alternarlas y
 
 Estas etapas describen la dirección de crecimiento. No constituyen un compromiso de implementar todos sus sistemas en el prototipo.
 
-| Etapa | Actividad principal | Cambio en la experiencia |
-| --- | --- | --- |
+| Etapa                      | Actividad principal                                      | Cambio en la experiencia                                             |
+| -------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------- |
 | Laboratorio de una persona | Análisis sencillos, pequeños lotes y primeros clientes | Aprender el funcionamiento del negocio y elegir las primeras compras |
-| Negocio establecido | Varios productos, clientes y mejoras de formulación | Organizar trabajos simultáneos y priorizar oportunidades |
-| Pequeña empresa | Ayuda contratada y procesos estandarizados | Delegar tareas dominadas y dedicar más tiempo a investigar |
-| Centro biotecnológico | Conexión entre especialidades y proyectos | Crear cadenas de producción y combinar conocimientos |
-| Corporación | Varias instalaciones y grandes proyectos | Transformar la región y decidir qué clase de empresa construir |
+| Negocio establecido        | Varios productos, clientes y mejoras de formulación     | Organizar trabajos simultáneos y priorizar oportunidades            |
+| Pequeña empresa           | Ayuda contratada y procesos estandarizados               | Delegar tareas dominadas y dedicar más tiempo a investigar          |
+| Centro biotecnológico     | Conexión entre especialidades y proyectos               | Crear cadenas de producción y combinar conocimientos                |
+| Corporación               | Varias instalaciones y grandes proyectos                 | Transformar la región y decidir qué clase de empresa construir     |
 
 ### Reglas de progresión
 
@@ -77,13 +77,13 @@ Los procedimientos se abstraen y los tiempos se comprimen. El nivel de detalle d
 
 Ejemplos de traducción a mecánicas, pendientes de selección:
 
-| Concepto | Posible aplicación jugable |
-| --- | --- |
-| Condiciones de funcionamiento de un producto | Elegir la formulación adecuada para un encargo |
-| Incertidumbre de una medición | Decidir si una primera pista basta o merece otro análisis |
-| Comparación con controles | Distinguir un efecto de un fallo del procedimiento |
-| Diferencia entre producción y purificación | Equilibrar cantidad, calidad, tiempo y coste |
-| Dificultades al escalar un proceso | Adaptar un procedimiento al pasar a equipos mayores |
+| Concepto                                     | Posible aplicación jugable                                |
+| -------------------------------------------- | ---------------------------------------------------------- |
+| Condiciones de funcionamiento de un producto | Elegir la formulación adecuada para un encargo            |
+| Incertidumbre de una medición               | Decidir si una primera pista basta o merece otro análisis |
+| Comparación con controles                   | Distinguir un efecto de un fallo del procedimiento         |
+| Diferencia entre producción y purificación | Equilibrar cantidad, calidad, tiempo y coste               |
+| Dificultades al escalar un proceso           | Adaptar un procedimiento al pasar a equipos mayores        |
 
 ### Criterios de diversión
 
@@ -169,13 +169,25 @@ Las siguientes ideas surgieron durante el brainstorming y aún no se consideran 
 
 También quedan por definir el nombre del juego y del pueblo, el pasado concreto del protagonista, los productos iniciales, los personajes, el calendario, la profundidad de la gestión y el alcance final de la corporación.
 
-## 11. Relación con la documentación del proyecto
+## 11. Referencias visuales
+
+El usuario ha señalado como referencias gráficas [Graveyard Keeper 2](https://store.steampowered.com/app/4358690/Graveyard_Keeper_2/), [SacriFire](https://store.steampowered.com/app/1661330/SacriFire/?l=spanish) y [Graytail](https://store.steampowered.com/app/2888960/Graytail/). Son referencias de apariencia y atmósfera, no requisitos para reproducir sus géneros, sistemas de combate ni escenarios.
+
+| Referencia         | Aspecto que conviene estudiar para nuestro juego                                                                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Graveyard Keeper 2 | Legibilidad de personajes, objetos, rutinas y espacios habitados; ambiente que combina actividad cotidiana y humor oscuro. |
+| SacriFire          | Integración de personajes dibujados en pixel art con entornos tridimensionales, profundidad e iluminación.               |
+| Graytail           | Encuadre elevado, exploración de espacios con volumen y una atmósfera que puede hacerse inquietante.                     |
+
+**Dirección propuesta para debatir:** conservar el control directo y la lectura clara de un juego de gestión, con personajes 2D expresivos y escenarios, bloques y máquinas 3D de texturas pixel art. El laboratorio y el pueblo deben sentirse acogedores al comienzo; la iluminación y los detalles pueden acompañar la evolución narrativa. La resolución, densidad de píxeles, ángulo de cámara, grado de detalle y posible giro de cámara se decidirán con una muestra jugable antes de fijar reglas de producción de assets.
+
+## 12. Relación con la documentación del proyecto
 
 Este documento recoge la visión de juego acordada. Complementa las instrucciones de trabajo de `AGENTS.md`, la presentación del proyecto de `Readme.me` y los hitos e historial de `DEVELOPMENT_PLAN.md`.
 
-La dirección técnica y visual existente se conserva: Godot 4.6, escenarios 3D low-poly con texturas pixel art, personajes 2D y cámara elevada de orientación fija.
+La dirección técnica y visual existente se conserva: Godot 4.7.2, escenarios 3D low-poly con texturas pixel art y personajes 2D. La cámara elevada figura todavía como fija en la documentación anterior; su posible giro está pendiente de decisión.
 
-El contenido describe objetivos de diseño; no acredita que estén implementados. Según las últimas entradas del plan aportado, el prototipo ya registra pedidos, producción, una mejora, guardado y exportación a Windows. La diversión y comprensión mediante juego humano siguen pendientes de validación en ese registro. El repositorio no se ha ejecutado para elaborar este documento.
+El contenido describe objetivos de diseño; no acredita que estén implementados.
 
 Las secciones antiguas de README y AGENTS que describen una fase previa deberán sincronizarse cuando se actualice la documentación del proyecto. Este archivo no las modifica.
 

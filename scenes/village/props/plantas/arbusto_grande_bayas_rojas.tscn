@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_rdvet"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/arbusto_grande_bayas_rojas.tres" id="2_dmhtd"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ue4mv"]
+size = Vector2(4.125, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jolgp"]
+size = Vector3(2.575, 3.5413764, 0.61038727)
+
+[node name="ArbustoGrandeBayasRojas" type="Node3D" unique_id=1068602637]
+script = ExtResource("1_rdvet")
+colision_automatica = false
+huella_fija = Vector2i(3, 1)
+
+[node name="Modelo" type="Node3D" parent="." unique_id=1437643685]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=684810180]
+mesh = SubResource("QuadMesh_ue4mv")
+surface_material_override/0 = ExtResource("2_dmhtd")
+
+[node name="Colision" type="StaticBody3D" parent="." unique_id=860150964]
+
+[node name="Forma" type="CollisionShape3D" parent="Colision" unique_id=45127019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7706882, 0)
+shape = SubResource("BoxShape3D_jolgp")

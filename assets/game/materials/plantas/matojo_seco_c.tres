@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/game/shaders/plant_sway.gdshader" id="1_6jowb"]
+[ext_resource type="Texture2D" path="res://assets/game/textures/plantas/matojo_seco_c.png" id="2_y4av1"]
+
+[resource]
+resource_name = "matojo_seco_c"
+render_priority = 0
+shader = ExtResource("1_6jowb")
+shader_parameter/plant_texture = ExtResource("2_y4av1")
+shader_parameter/rect_min = Vector2(-3, 0)
+shader_parameter/rect_size = Vector2(70, 64)
+shader_parameter/top_row = 24.0
+shader_parameter/pixel_step = Vector3(0.03125, 0.054482713, 0.038149204)
+shader_parameter/wind_direction = Vector2(1, 0.3)
+shader_parameter/wind_speed = 1.2
+shader_parameter/wind_scale = 0.35
+shader_parameter/wind_strength = 1.0
+shader_parameter/bend_texels = 1.5
+shader_parameter/sway_texels = 1.0
+shader_parameter/sway_frequency = 0.6
+shader_parameter/time_step = 0.1

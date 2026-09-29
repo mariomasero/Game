@@ -6,3 +6,14 @@ builds/
 *.log
 *.tmp
 *.bak
+
+# Binarios y paquetes pesados: ejecutables exportados, plantillas y copias comprimidas.
+*.exe
+*.pck
+*.tpz
+*.zip
+*.skill
+# Ajustes locales de Claude Code (las skills de .claude/skills sí se versionan).
+.claude/settings.local.json
+# Copia suelta de la paleta; la buena está en assets/source/palettes/.
+/apollo_proyecto.gpl

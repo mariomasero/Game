@@ -1,0 +1,293 @@
+[gd_scene format=3 uid="uid://c1n4vf7p3rm5e"]
+
+[ext_resource type="PackedScene" path="res://scenes/village/props/farola.tscn" id="9_w2rka"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/arbol.tscn" id="9_wfdad"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/metal_fence.tscn" id="10_6rut2"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/abeto.tscn" id="10_wfdad"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/plantas/arbusto_flores_amarillas.tscn" id="11_aq0g8"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/plantas/flores_amarillas.tscn" id="12_f4xul"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/laboratorio_viejo.tscn" id="12_nkgx5"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/plantas/hierba_baja_capullos.tscn" id="13_wix6n"]
+[ext_resource type="PackedScene" path="res://scenes/village/props/plantas/matojo_seco_c.tscn" id="16_f4xul"]
+[ext_resource type="MeshLibrary" uid="uid://cya1pgmp1ccfs" path="res://assets/game/tilesets/paint_blocks.meshlib.tres" id="bloques"]
+[ext_resource type="Script" uid="uid://cyigbp14qpkg8" path="res://scripts/domain/placeable_definition.gd" id="definicion"]
+[ext_resource type="Resource" path="res://resources/definitions/placeables/bloque_cesped.tres" id="def_bloque_cesped"]
+[ext_resource type="PackedScene" path="res://scenes/player/player_3d.tscn" id="player"]
+[ext_resource type="Script" uid="uid://dogeyjvncy8rd" path="res://scenes/world/village.gd" id="script"]
+[ext_resource type="MeshLibrary" uid="uid://br7no4ntccfu3" path="res://assets/game/tilesets/paint_terrain.meshlib.tres" id="terreno"]
+[ext_resource type="MeshLibrary" uid="uid://df8j37jgiejgt" path="res://assets/game/tilesets/paint_zones.meshlib.tres" id="zonas"]
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.09, 0.12, 0.16, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.7, 0.85, 1)
+ambient_light_energy = 0.54
+reflected_light_source = 1
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes"]
+
+[node name="Pueblo" type="Node3D" unique_id=1397869605 node_paths=PackedStringArray("terrain_map", "block_map", "plot_map", "props_root", "furniture_root")]
+script = ExtResource("script")
+terrain_map = NodePath("Terreno")
+block_map = NodePath("Bloques")
+plot_map = NodePath("Parcela")
+props_root = NodePath("Objetos")
+furniture_root = NodePath("Muebles")
+catalog = Array[ExtResource("definicion")]([ExtResource("def_bloque_cesped")])
+follow_player = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1215735681]
+environment = SubResource("Environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1782127446]
+transform = Transform3D(0.81915206, 0.40957603, -0.40183246, 0, 0.7003808, 0.7137725, 0.57357645, -0.58474886, 0.5737508, 0, 0, 0)
+light_color = Color(1, 0.96, 0.89, 1)
+shadow_enabled = true
+shadow_bias = 0.05
+directional_shadow_mode = 0
+directional_shadow_max_distance = 40.0
+
+[node name="Terreno" type="GridMap" parent="." unique_id=1828757923]
+visible = false
+mesh_library = ExtResource("terreno")
+cell_size = Vector3(1, 1.7434468, 1.2207745)
+collision_layer = 0
+collision_mask = 0
+data = {
+"cells": PackedInt32Array(17, 65535, 1, 16, 65535, 1, 15, 65535, 1, 14, 65535, 1, 13, 65535, 1, 12, 65535, 1, 11, 65535, 1, 10, 65535, 1, 9, 65535, 1, 8, 65535, 1, 7, 65535, 1, 6, 65535, 1, 5, 65535, 1, 4, 65535, 1, 3, 65535, 1, 2, 65535, 1, 1, 65535, 1, 0, 65535, 1, 65535, 65535, 1, 65534, 65535, 1, 65533, 65535, 1, 65532, 65535, 1, 65531, 65535, 1, 65530, 65535, 1, 65529, 65535, 1, 65528, 65535, 1, 65527, 65535, 1, 65526, 65535, 1, 65525, 65535, 1, 65524, 65535, 1, 65523, 65535, 1, 65522, 65535, 1, 65521, 65535, 1, 65520, 65535, 1, 65519, 65535, 1, 65518, 65535, 1, 65517, 65535, 1, 65516, 65535, 1, 65515, 65535, 1, 65515, 0, 1, 65516, 0, 1, 65517, 0, 1, 65518, 0, 1, 65519, 0, 1, 65520, 0, 1, 65521, 0, 1, 65522, 0, 1, 65523, 0, 1, 65524, 0, 1, 65525, 0, 1, 65526, 0, 1, 65527, 0, 1, 65528, 0, 1, 65529, 0, 1, 65530, 0, 1, 65531, 0, 1, 65532, 0, 1, 65533, 0, 1, 65534, 0, 1, 65535, 0, 1, 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1, 8, 0, 1, 9, 0, 1, 10, 0, 1, 11, 0, 1, 12, 0, 1, 13, 0, 1, 14, 0, 1, 15, 0, 1, 16, 0, 1, 17, 0, 1, 65535, 1, 1, 65535, 2, 1, 65535, 3, 1, 65535, 4, 1, 65535, 5, 1, 65535, 6, 1, 65535, 7, 1, 65535, 8, 1, 65535, 9, 1, 0, 9, 1, 0, 8, 1, 0, 7, 1, 0, 6, 1, 0, 5, 1, 0, 4, 1, 0, 3, 1, 0, 2, 1, 0, 1, 1, 65535, 65534, 1, 65534, 65534, 1, 65534, 65533, 1, 65533, 65533, 1, 65532, 65533, 1, 65532, 65532, 1, 65531, 65532, 1, 65530, 65532, 1, 65530, 65531, 1, 65529, 65531, 1, 65529, 65530, 1, 65528, 65530, 1, 65528, 65529, 1, 65527, 65529, 1, 65526, 65529, 1, 65534, 65532, 1, 65535, 65532, 1, 0, 65531, 1, 1, 65531, 1, 2, 65531, 1, 3, 65531, 1, 4, 65531, 1, 5, 65531, 1, 5, 65530, 1, 6, 65530, 1, 7, 65530, 1, 7, 65529, 1, 8, 65529, 1, 9, 65529, 1, 10, 65529, 1, 65535, 65531, 1, 0, 65532, 1, 1, 65532, 1, 2, 65532, 1, 3, 65532, 1, 4, 65532, 1, 6, 65531, 1, 8, 65530, 1, 9, 65530, 1, 14, 3, 100, 13, 3, 100, 12, 4, 100, 11, 4, 100, 10, 5, 100, 9, 6, 100, 10, 6, 100, 10, 7, 100, 11, 7, 100, 12, 7, 100, 11, 6, 100, 11, 5, 100, 11, 3, 100, 12, 3, 100, 15, 3, 100, 16, 3, 100, 17, 3, 100, 17, 2, 100, 18, 2, 100, 19, 2, 100, 20, 2, 100, 20, 3, 100, 19, 3, 100, 18, 3, 100, 17, 4, 100, 17, 5, 100, 18, 5, 100, 18, 4, 100, 19, 4, 100, 20, 4, 100, 20, 5, 100, 19, 5, 100, 19, 6, 100, 18, 6, 100, 17, 6, 100, 16, 6, 100, 16, 5, 100, 15, 5, 100, 15, 4, 100, 14, 4, 100, 14, 5, 100, 13, 5, 100, 13, 4, 100, 12, 5, 100, 12, 6, 100, 13, 6, 100, 13, 7, 100, 14, 7, 100, 13, 8, 100, 13, 9, 100, 14, 10, 100, 10, 8, 100, 9, 8, 100, 9, 7, 100, 9, 9, 100, 10, 9, 100, 10, 10, 100, 11, 10, 100, 12, 10, 100, 12, 11, 100, 13, 11, 100, 14, 11, 100, 15, 11, 100, 16, 11, 100, 17, 11, 100, 18, 11, 100, 19, 10, 100, 19, 9, 100, 19, 8, 100, 19, 7, 100, 20, 6, 100, 18, 8, 100, 18, 9, 100, 18, 10, 100, 17, 10, 100, 17, 9, 0, 17, 8, 0, 17, 7, 100, 18, 7, 100, 16, 9, 0, 16, 10, 100, 16, 8, 0, 16, 7, 100, 15, 6, 100, 14, 6, 100, 15, 7, 100, 15, 8, 100, 15, 9, 100, 14, 9, 100, 14, 8, 100, 15, 10, 100, 13, 10, 100, 12, 9, 100, 12, 8, 100, 11, 8, 100, 11, 9, 100, 65533, 65534, 1, 65532, 65534, 1, 65531, 65534, 1, 65533, 65532, 1, 65531, 65531, 1, 65530, 65530, 1, 65529, 65529, 1)
+}
+
+[node name="Bloques" type="GridMap" parent="." unique_id=853477582]
+mesh_library = ExtResource("bloques")
+cell_size = Vector3(1, 1.7434468, 1.2207745)
+collision_layer = 0
+collision_mask = 0
+data = {
+"cells": PackedInt32Array(65515, 1, 4, 65516, 1, 4, 65517, 1, 4, 65518, 1, 4, 65519, 1, 4, 65520, 1, 4, 65521, 1, 4, 65522, 1, 4, 65523, 1, 4, 65524, 1, 4, 65525, 1, 4, 65526, 1, 4, 65527, 1, 4, 65528, 1, 4, 65529, 1, 4, 65530, 1, 4, 65531, 1, 4, 65532, 1, 4, 65533, 1, 4, 65534, 1, 4, 65534, 2, 4, 65534, 3, 4, 65534, 4, 4, 65534, 5, 4, 65534, 6, 4, 65534, 7, 4, 65534, 8, 4, 65534, 9, 4, 65515, 2, 4, 65516, 2, 4, 65517, 2, 4, 65518, 2, 4, 65519, 2, 4, 65520, 2, 4, 65521, 2, 4, 65522, 2, 4, 65523, 2, 4, 65524, 2, 4, 65525, 2, 4, 65526, 2, 4, 65527, 2, 4, 65528, 2, 4, 65529, 2, 4, 65530, 2, 4, 65531, 2, 4, 65532, 2, 4, 65533, 2, 4, 65533, 3, 4, 65533, 4, 4, 65533, 5, 4, 65533, 6, 4, 65533, 7, 4, 65533, 8, 4, 65533, 9, 4, 1, 9, 4, 2, 9, 4, 2, 8, 4, 1, 8, 4, 1, 7, 4, 1, 6, 4, 2, 6, 4, 2, 7, 4, 2, 5, 4, 1, 5, 4, 1, 4, 4, 1, 3, 4, 1, 2, 4, 1, 1, 4, 2, 1, 4, 2, 2, 4, 2, 3, 4, 2, 4, 4, 3, 1, 4, 3, 2, 4, 4, 2, 4, 5, 2, 4, 6, 2, 4, 7, 2, 4, 8, 2, 4, 9, 2, 4, 9, 1, 4, 8, 1, 4, 7, 1, 4, 6, 1, 4, 5, 1, 4, 4, 1, 4, 65515, 65533, 4, 65515, 65534, 4, 65516, 65534, 4, 65516, 65533, 4, 65517, 65533, 4, 65518, 65533, 4, 65519, 65533, 4, 65520, 65533, 4, 65521, 65533, 4, 65522, 65533, 4, 65523, 65533, 4, 65524, 65533, 4, 65525, 65533, 4, 65526, 65533, 4, 65527, 65533, 4, 65528, 65533, 4, 65529, 65533, 4, 65530, 65533, 4, 65530, 65534, 4, 65529, 65534, 4, 65528, 65534, 4, 65527, 65534, 4, 65526, 65534, 4, 65525, 65534, 4, 65524, 65534, 4, 65523, 65534, 4, 65522, 65534, 4, 65521, 65534, 4, 65520, 65534, 4, 65519, 65534, 4, 65518, 65534, 4, 65517, 65534, 4)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Parcela" type="GridMap" parent="." unique_id=1650277391]
+mesh_library = ExtResource("zonas")
+cell_size = Vector3(1, 1.7434468, 1.2207745)
+collision_layer = 0
+collision_mask = 0
+
+[node name="Objetos" type="Node3D" parent="." unique_id=319447672]
+
+[node name="Farola" parent="Objetos" unique_id=679992291 instance=ExtResource("9_w2rka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.436, 3.052)
+ajustar_a_rejilla = false
+
+[node name="Farola2" parent="Objetos" unique_id=1355645031 instance=ExtResource("9_w2rka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5, 0.436, 9.156)
+ajustar_a_rejilla = false
+
+[node name="Farola3" parent="Objetos" unique_id=835545147 instance=ExtResource("9_w2rka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.5, 0.436, 1.831)
+ajustar_a_rejilla = false
+
+[node name="Farola4" parent="Objetos" unique_id=775077449 instance=ExtResource("9_w2rka")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.5, 0, -1.8311617)
+
+[node name="Arbol" parent="Objetos" unique_id=654522697 instance=ExtResource("9_wfdad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.272711)
+
+[node name="Abeto" parent="Objetos" unique_id=24561039 instance=ExtResource("10_wfdad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 14.038907)
+
+[node name="MetalFence" parent="Objetos" unique_id=1350306011 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 4.272711)
+
+[node name="MetalFence2" parent="Objetos" unique_id=301632273 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 4.272711)
+
+[node name="MetalFence3" parent="Objetos" unique_id=1673337745 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, 4.272711)
+
+[node name="MetalFence4" parent="Objetos" unique_id=1566253269 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 4.272711)
+
+[node name="MetalFence5" parent="Objetos" unique_id=831391144 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, 4.272711)
+
+[node name="MetalFence6" parent="Objetos" unique_id=1564700092 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0, 4.272711)
+
+[node name="MetalFence7" parent="Objetos" unique_id=521774690 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 4.272711)
+
+[node name="MetalFence8" parent="Objetos" unique_id=1980348354 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 4.272711)
+
+[node name="MetalFence41" parent="Objetos" unique_id=611861591 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 6.71426)
+
+[node name="MetalFence42" parent="Objetos" unique_id=1843900432 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 5.4934855)
+
+[node name="MetalFence43" parent="Objetos" unique_id=1807705095 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 7.9350343)
+
+[node name="MetalFence44" parent="Objetos" unique_id=1515027270 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 5.4934855)
+
+[node name="MetalFence45" parent="Objetos" unique_id=1602936871 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 10.376583)
+
+[node name="MetalFence46" parent="Objetos" unique_id=2028162507 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 10.376583)
+
+[node name="MetalFence47" parent="Objetos" unique_id=387347668 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5, 0, 9.155809)
+
+[node name="MetalFence48" parent="Objetos" unique_id=1523836360 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 6.71426)
+
+[node name="MetalFence49" parent="Objetos" unique_id=1182916960 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 5.4934855)
+
+[node name="MetalFence50" parent="Objetos" unique_id=549256723 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 7.9350343)
+
+[node name="MetalFence51" parent="Objetos" unique_id=1065680775 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 5.4934855)
+
+[node name="MetalFence52" parent="Objetos" unique_id=1901911841 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 10.376583)
+
+[node name="MetalFence53" parent="Objetos" unique_id=237204688 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 10.376583)
+
+[node name="MetalFence54" parent="Objetos" unique_id=1032632395 instance=ExtResource("10_6rut2")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5, 0, 9.155809)
+
+[node name="MetalFence36" parent="Objetos" unique_id=1097498891 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 4.272711)
+
+[node name="MetalFence37" parent="Objetos" unique_id=1266885128 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 4.272711)
+
+[node name="MetalFence38" parent="Objetos" unique_id=100088442 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.272711)
+
+[node name="MetalFence39" parent="Objetos" unique_id=865881747 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 4.272711)
+
+[node name="MetalFence40" parent="Objetos" unique_id=1931566635 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 4.272711)
+
+[node name="MetalFence9" parent="Objetos" unique_id=1671971329 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5, 0, 4.272711)
+
+[node name="MetalFence10" parent="Objetos" unique_id=357123500 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0, 4.272711)
+
+[node name="MetalFence11" parent="Objetos" unique_id=1859975508 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 0, 4.272711)
+
+[node name="MetalFence12" parent="Objetos" unique_id=397153240 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, 4.272711)
+
+[node name="MetalFence13" parent="Objetos" unique_id=173839964 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5, 0, 4.272711)
+
+[node name="MetalFence14" parent="Objetos" unique_id=720904752 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0, 4.272711)
+
+[node name="MetalFence15" parent="Objetos" unique_id=915304376 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 0, 4.272711)
+
+[node name="MetalFence17" parent="Objetos" unique_id=652076061 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5, 0, 4.272711)
+
+[node name="MetalFence18" parent="Objetos" unique_id=1946300799 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 0, 4.272711)
+
+[node name="MetalFence16" parent="Objetos" unique_id=433473755 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.5, 0, 4.272711)
+
+[node name="MetalFence19" parent="Objetos" unique_id=1111646869 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -4.272711)
+
+[node name="MetalFence20" parent="Objetos" unique_id=1807856135 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, -4.272711)
+
+[node name="MetalFence21" parent="Objetos" unique_id=2049990308 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, -4.272711)
+
+[node name="MetalFence22" parent="Objetos" unique_id=466240719 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -4.272711)
+
+[node name="MetalFence23" parent="Objetos" unique_id=1447161631 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, -4.272711)
+
+[node name="MetalFence24" parent="Objetos" unique_id=1852961687 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, -4.272711)
+
+[node name="MetalFence25" parent="Objetos" unique_id=345721447 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0, -4.272711)
+
+[node name="MetalFence26" parent="Objetos" unique_id=1841548126 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 0, -4.272711)
+
+[node name="MetalFence27" parent="Objetos" unique_id=140855392 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5, 0, -4.272711)
+
+[node name="MetalFence28" parent="Objetos" unique_id=1605793603 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.5, 0, -4.272711)
+
+[node name="MetalFence29" parent="Objetos" unique_id=1961523048 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0, -4.272711)
+
+[node name="MetalFence30" parent="Objetos" unique_id=131340090 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 0, -4.272711)
+
+[node name="MetalFence31" parent="Objetos" unique_id=1317314060 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5, 0, -4.272711)
+
+[node name="MetalFence32" parent="Objetos" unique_id=972555067 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5, 0, -4.272711)
+
+[node name="MetalFence33" parent="Objetos" unique_id=851968659 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 0, -4.272711)
+
+[node name="MetalFence34" parent="Objetos" unique_id=1388541630 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0, -4.272711)
+
+[node name="MetalFence35" parent="Objetos" unique_id=1697931045 instance=ExtResource("10_6rut2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0, -4.272711)
+
+[node name="ArbustoFloresAmarillas" parent="Objetos" unique_id=165304107 instance=ExtResource("11_aq0g8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, 11.597358)
+
+[node name="FloresAmarillas" parent="Objetos" unique_id=732937767 instance=ExtResource("12_f4xul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.643192, 0, 11.832902)
+ajustar_a_rejilla = false
+
+[node name="HierbaBajaCapullos" parent="Objetos" unique_id=536235081 instance=ExtResource("13_wix6n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 11.252509)
+ajustar_a_rejilla = false
+
+[node name="Muebles" type="Node3D" parent="." unique_id=902311574]
+
+[node name="LaboratorioViejo" parent="Muebles" unique_id=1814716725 instance=ExtResource("12_nkgx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.791298, 0, -10.664339)
+ajustar_a_rejilla = false
+
+[node name="Player" parent="." unique_id=468814942 node_paths=PackedStringArray("camera") instance=ExtResource("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+camera = NodePath("../Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=423577846]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 19.659649, 13.765835)
+attributes = SubResource("CameraAttributes")
+projection = 1
+current = true
+size = 16.875
+near = 0.1
+far = 80.0
+
+[node name="MatojoSecoC" parent="." unique_id=633079058 instance=ExtResource("16_f4xul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 0, 14.038907)

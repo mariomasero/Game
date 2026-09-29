@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/village/props/village_prop.gd" id="1_en71d"]
+[ext_resource type="Material" path="res://assets/game/materials/plantas/dientes_de_leon.tres" id="2_eb0mo"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_acj85"]
+size = Vector2(2.1875, 2)
+
+[node name="DientesDeLeon" type="Node3D" unique_id=606372400]
+script = ExtResource("1_en71d")
+colision_automatica = false
+huella_fija = Vector2i(1, 1)
+atravesable = true
+
+[node name="Modelo" type="Node3D" parent="." unique_id=493219258]
+
+[node name="Lienzo" type="MeshInstance3D" parent="Modelo" unique_id=1972770461]
+mesh = SubResource("QuadMesh_acj85")
+surface_material_override/0 = ExtResource("2_eb0mo")
